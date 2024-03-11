@@ -1,0 +1,29 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "build": "babel . --out-dir dist --copy-files && npm run minify",
+    "minify": "terser dist -o dist --compress --mangle --toplevel"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@msgpack/msgpack": "^3.0.0-beta2",
+    "axios": "^1.6.7",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.2",
+    "express": "^4.18.2",
+    "express-xml-bodyparser": "^0.3.0",
+    "moment-timezone": "^0.5.45",
+    "morgan": "^1.10.0",
+    "node-cron": "^3.0.3",
+    "openai": "^4.28.4",
+    "xml2js": "^0.6.2",
+    "xmlbuilder": "^15.1.1",
+    "zlib": "^1.0.5"
+  }
+}

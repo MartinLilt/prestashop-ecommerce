@@ -1,0 +1,8 @@
+package-lock.json
+.env
+node_modules
+dist
+logs/update_log.log
+data/prestashop_backup.xml
+cache/conditions.json
+cache/description.json
